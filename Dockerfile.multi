@@ -24,7 +24,7 @@ FROM data-provider-build AS api-build
 WORKDIR /app/api
 COPY api/package*.json ./
 COPY api/ ./
-COPY script /app/api/config
+COPY script /app/api/script
 
 # Copy data-provider to API's node_modules
 RUN mkdir -p /app/api/node_modules/librechat-data-provider/
